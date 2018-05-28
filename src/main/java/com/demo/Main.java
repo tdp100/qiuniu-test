@@ -36,10 +36,10 @@ public class Main {
         for(int i=0 ; i< domains.length; i++){
             System.out.println(domains[i]);
 
-            if(domains[i].contains("clouddn.com") && USE_CUSTOM_DOMAIN) {
+            if(domains[i].contains("clouddn.com") && !USE_CUSTOM_DOMAIN) {
                 domainName = domains[i];
                 break;
-            } else if (domains[i].contains("clouddn.com") && !USE_CUSTOM_DOMAIN){
+            } else if (domains[i].contains("clouddn.com") && USE_CUSTOM_DOMAIN){
                 continue;
             } else {
                 domainName = domains[i];
